@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Food Donor/Little Sisters of poor</title>
+    <link rel="stylesheet" href="Donate.css">
+    <link rel="icon" type="image/x-icon" href="card_3.png">
+    <body>
+      
+    </body>
+<style>
+   
+   body {
+            margin: 0;
+            overflow-x: hidden;
+          
+                    background-image: url('card_3.png'); 
+                    background-size: cover; 
+                    background-repeat: no-repeat; 
+                    background-attachment: fixed; 
+                
+                }
+   .nav3 {
+  position: absolute;
+  right: 20px; 
+}
+.nav3 button {
+  padding: 10px 30px;
+  background-color: #333333;
+  color: #ffff;
+  border: none;
+  border-radius: 20px;
+
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+.container_1,.container_2,.container_3 {
+            width: 500px;
+            height: 340px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 12% auto 96px;
+            z-index: 1;
+            position: relative; 
+            text-align: justify; 
+            text-decoration: none;
+        }
+
+        .container_1 h1{
+            margin: 0px;
+         
+        }
+        .container_2 h1 {
+            margin: 0px;
+        }
+        
+        .container_3 h3{
+            margin: 0px;
+        }
+        .container_3 p {
+    margin: 8px;
+
+    
+}
+
+        .container_1 button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333333;
+            color: white;
+            border-radius: 10px;
+            font-size: 16px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+      
+        .container_2 button, .container_3 button {
+            position: absolute;
+            bottom: 20px;
+            left: calc(80% + 10px); 
+            background-color: #333333;
+            color: white;
+            border-radius: 10px;
+            font-size: 16px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        
+        .back button {
+            position: absolute;
+            bottom: 20px;
+            left: 20px; 
+            background-color: #33333300;
+            color:#333333;
+            border-radius: 10px;
+            font-size: 16px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .back button:hover{
+            background-color: #333333;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav1">
+            <li><a href="#Contact">Little Sisters of poor</a></li>  
+        </div>
+        <div class="nav2">
+            <img src="LOGOANIMATION.gif" alt="Logo">
+        </div>
+        
+ 
+        <div class="nav3">
+           
+                <button type="submit">UPI ID:littlesistersofpoor@hdfcbank</button>
+           
+        </div>
+    </header>
+    
+    <div class="container_1" id="container_1">
+        <h1>About our Orphanage</h1>
+        <p>Little Sisters of the Poor, an orphanage committed to providing care for orphaned children, greatly benefits from monetary donations specifically designated for food needs. With these funds, the orphanage can purchase essential food items in bulk, ensuring a steady supply of nutritious meals for its residents. Monetary donations enable the orphanage to adapt to changing dietary needs and preferences, as well as unforeseen circumstances such as fluctuations in food prices or emergency situations. By contributing financially to the orphanage's food fund, donors directly support the well-being and health of orphaned children, providing them with the sustenance they need to thrive and grow in a safe and nurturing environment.</p>
+        <button id="next_1">Next</button>
+
+    </div>
+    <div class="container_2" id="container_2">
+        <h1>Justification</h1>
+        <p>Little Sisters of the Poor relies on donations to provide essential care and support to orphaned children. These donations are crucial for covering basic needs such as food, shelter, clothing, and healthcare, as well as supporting educational programs and facility maintenance. Additionally, donations help fund staffing and training, ensuring that the orphanage has qualified personnel to care for the children. By contributing financially to Little Sisters of the Poor, donors directly impact the well-being and future prospects of orphaned children, offering them stability, support, and hope for a better future.</p>
+        <button id="next_2">Next</button>
+        <div class="back"> 
+            <button id="back_1">Back</button>
+        </div>
+        </div>
+    <div class="container_3" id="container_3">
+        <h3>Bank Details:</h3>
+        <p>AC.NO.<b>990056678480000</b><br>IFSC:<b>HDFC12300334</b><br>Bank Name & Branch:HDFC BANK,Arumbakkam</p>
+        <h3>Address:</h3>
+        <p>Akshaya Trust - Valasaravakkam, 36, Suresh Nagar Main Rd, Janaki nagar extension, Janaki Nagar, Bhavani Nagar, Valasaravakkam, Chennai, Tamil Nadu 600071.</p>
+        <h3>Contact:</h3>
+        <p>call:+91-7286293423<br>Mail:littlesistersofthepoor@gmail.com</p>
+        
+        <div class="back"> 
+            <button id="back_2">Back</button>
+        </div>
+  </div>
+  <script>
+    document.getElementById("next_1").addEventListener("click", function() {
+        document.getElementById("container_1").style.display = "none";
+        document.getElementById("container_2").style.display = "block";
+    });
+
+    document.getElementById("next_2").addEventListener("click", function() {
+        document.getElementById("container_2").style.display = "none";
+        document.getElementById("container_3").style.display = "block";
+    });
+
+    document.getElementById("back_1").addEventListener("click", function() {
+        document.getElementById("container_2").style.display = "none";
+        document.getElementById("container_1").style.display = "block";
+    });
+
+    document.getElementById("back_2").addEventListener("click", function() {
+        document.getElementById("container_3").style.display = "none";
+        document.getElementById("container_2").style.display = "block";
+    });
+</script>
+</body>
+</html>

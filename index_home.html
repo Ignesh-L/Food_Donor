@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Donor Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <style>
+        .nav3 {
+    position: absolute;
+    right: 240px; 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: #333333;
+}
+.nav3 a{
+    text-decoration: none;
+    color: #333333;
+}
+
+.nav4 {
+    position: absolute;
+    right: 160px; 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+   
+    
+}
+.nav4 a{
+    text-decoration: none;
+    color: #333333;
+}
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="nav1">
+            <li><a href="#Contact">Contact Us</a></li>  
+        </div>
+        <div class="nav2">
+            <img src="LOGOANIMATION.gif" alt="Logo">
+        </div>
+        <div class="nav3">
+            <li><a href="#Home">Home</a></li>  
+        </div>
+        <div class="nav4">
+            <li><a href="#about">About</a></li>  
+        </div>
+        <div class="nav5">
+            <form action="index.html" method="get">
+                <button type="submit">Logout</button>
+            </form>
+        </div>
+    </header>
+
+    <div class="banner" id="Home">
+        <div class="banner_img"></div>
+        <div class="bottom-button">
+            <button onclick="location.href='Donate.html'">DONATE</button>
+            
+        </div>
+        <div class="bot" id="bot">
+            <img src="Chatbot.png" alt="Chatbot" >
+        </div>
+        <h1 id="changing-text">Nourishing hearts, one meal at a time—because kindness is the most satisfying dish.</h1>
+    </div>
+    
+    <div class="About" id="about">
+       <H1>About</H1>
+      
+          <p> Welcome to Food Donor, a platform that facilitates meaningful connections between those who want to make a difference and those in need. We offer two distinct logins to cater to both sides of this noble cause.
+            The first login, labeled "DONOR," empowers individuals to contribute to the well-being of society. As a donor, you can easily donate food to Orphanages and Old Age Homes, extending a helping hand to those who require it the most.
+            The second login, aptly named "Beneficiary," is designed for Orphanages and Old Age Homes seeking support. Organizations can register here to receive direct food donations, streamlining the process and ensuring that help reaches those who need it promptly.
+            At Food Donor, we believe in the transformative power of collective generosity. Join us in making a positive impact on the lives of others by becoming a donor or a beneficiary today. Together, let's create a world where no one goes hungry.Welcome to Food Donor, a platform that facilitates meaningful connections between those who want to make a difference and those in need. We offer two distinct logins to cater to both sides of this noble cause.
+            The first login, labeled "DONOR," empowers individuals to contribute to the well-being of society. As a donor, you can easily donate food to Orphanages and Old Age Homes, extending a helping hand to those who require it the most.
+            The second login, aptly named "Beneficiary," is designed for Orphanages and Old Age Homes seeking support. Organizations can register here to receive direct food donations, streamlining the process and ensuring that help reaches those who need it promptly.
+            At Food Donor, we believe in the transformative power of collective generosity. Join us in making a positive impact on the lives of others by becoming a donor or a beneficiary today. Together, let's create a world where no one goes hungry.</p>
+    </div>
+
+    <div class="Contact" id="Contact">
+        
+        <div class="Cimg1">
+            <img src="contactimg1.png" >
+             </div>
+        <div>
+            <h1>How can we help?</h1>
+            <h3>Get in touch with our support team</h3>
+            <h4>Mail : fooddonor@gmail.com</h4>
+            <h4>Call : +91-9677270297</h4>
+        </div>
+            <div class="Cimg2">
+                <img src="contactimg2.png" >
+            </div>
+    </div>
+
+    <style>
+        .bot {
+            position: fixed;
+            bottom: 60px;
+            right: 60px;
+            z-index: 9999;
+            cursor: pointer;
+        }
+        
+        .bot img {
+            width: 50px; 
+            height: 50px; 
+        }
+        .bot:hover {
+            filter: drop-shadow(0 4px 8px rgba(255, 255, 255, 0.5));
+        }
+        
+                
+                .login_popup {
+                    display: none;
+                    position: fixed;
+                    bottom: 20px; 
+                    right: 20px; 
+                    z-index: 9999; 
+                }
+              
+                #chatbot_container {
+                    display: none;
+                    position: fixed;
+                    bottom: 20px; 
+                    right: 20px;
+                    background-color: #ffffff;
+                    padding: 25px;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                    z-index: 9999;
+                }
+        
+                
+                .close_button {
+                    position: absolute;
+                    top: 6px;
+                    right: 6px;
+                    cursor: pointer;
+                }
+        
+                .close_icon {
+                    width: 20px;
+                    height: 20px;
+                    fill: rgb(0, 0, 0);
+                    
+                    
+                }
+            </style>
+
+
+<div class="login_popup">
+    <div class="login_popup_container">
+        <button onclick="location.href='donor_login.html'" id="dnr-btn">DONOR</button>
+        <button onclick="location.href='Benifiter_login.html'" id="bft_btn">BENEFITTER</button>
+    </div>
+</div>
+
+
+<div id="chatbot_container">
+
+    <div class="close_button" onclick="closeChatbot()">
+        <svg class="close_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"/>
+        </svg>
+    </div>
+    <iframe
+        allow="microphone;"
+        width="350"
+        height="430"
+        src="https://console.dialogflow.com/api-client/demo/embedded/ccbe7854-2f17-4d7d-974f-a63ec63fa171">
+    </iframe>
+</div>
+
+<script src="Text_animation.js"></script>
+<script>
+       document.getElementById('bot').addEventListener('click', function() {
+        var chatbotContainer = document.getElementById('chatbot_container');
+        chatbotContainer.style.display = "block";
+    });
+
+    function closeChatbot() {
+        var chatbotContainer = document.getElementById('chatbot_container');
+        chatbotContainer.style.display = "none";
+    }
+</script>
+
+</body>
+</html>
